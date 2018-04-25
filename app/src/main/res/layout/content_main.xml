@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+   >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingRight="4dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:id="@+id/thing_to_do"
+                android:layout_height="184dp"
+                android:padding="4dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:src="@drawable/things_to_do" />
+
+            <ImageView
+                android:layout_height="244dp"
+                android:layout_width="match_parent"
+                android:padding="4dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:src="@drawable/saved_places" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="182dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:padding="4dp"
+                android:src="@drawable/food_drink" />
+
+            <ImageView
+                android:layout_height="238dp"
+                android:layout_width="match_parent"
+                android:padding="4dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:paddingTop="8dp"
+                android:src="@drawable/need_to_know" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <ImageView
+                android:padding="4dp"
+                android:id="@+id/phoronic"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_gravity="right"
+                android:src="@drawable/pharonoics" />
+
+            <ImageView
+                android:layout_height="191dp"
+                android:layout_width="match_parent"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_gravity="right"
+                android:padding="4dp"
+                android:src="@drawable/outdoors" />
+            <ImageView
+                android:padding="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_gravity="right"
+                android:src="@drawable/getting_around" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
+</ScrollView>
