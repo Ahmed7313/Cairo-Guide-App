@@ -10,6 +10,7 @@
     <string name="email">ahmedrabie7313@gmail.com</string>
     <string name="title_activity_aaaa">aaaa</string>
     <string name="large_text">
+        
         "Material is the metaphor.\n\n"
 
         "A material metaphor is the unifying theory of a rationalized space and a system of motion."
@@ -100,4 +101,16 @@
     </string>
     <string name="title_activity_place_detailes">place_detailes</string>
     <string name="egyptian_museame">egtian Museam contains thiusands of picies ofancient Egyptian history that will astonish your mind when you see it and there is a guide inside the useam that will explain for you all the information that you will need so you can gasp a look at the ancient history of egypt</string>
+    <string name="mohamed_ali_detailed_info">The Great Mosque of Muhammad Ali Pasha or Alabaster Mosque (Arabic: مسجد محمد علي, Turkish: Mehmet Ali Paşa Camii) is a mosque situated in the Citadel of Cairo in Egypt and commissioned by Muhammad Ali Pasha between 1830 and 1848.
+
+Situated on the summit of the citadel, this Ottoman mosque, the largest to be built in the first half of the 19th century, is, with its animated silhouette and twin minarets, the most visible mosque in Cairo.
+
+The mosque was built in memory of Tusun Pasha, Muhammad Ali's oldest son, who died in 1816.
+
+This mosque, along with the citadel, is one of the landmarks and tourist attractions of Cairo and is one of the first features to be seen when approaching the city any direction.</string>
+
+    <string name="egyptian_museum">The Museum of Egyptian Antiquities, known commonly as the Egyptian Museum or Museum of Cairo, in Cairo, Egypt, is home to an extensive collection of ancient Egyptian antiquities. It has 120,000 items, with a representative amount on display, the remainder in storerooms. The edifice is one of the largest museums in the region. As of July 2017, the museum is open to the public.</string>
+    <string name="el_suhimi_house">Bayt Al-Suhaymi ("House of Suhaymi") is an old Ottoman era house museum in Cairo, Egypt. It was originally built in 1648 by Abdel Wahab el Tablawy along the Darb al-Asfar, a very prestigious and expensive part of Medieval Cairo. In 1796 it was purchased by Sheikh Ahmed as-Suhaymi whose family held it for several subsequent generations. The Sheikh greatly extended the house from its original through incorporating neighbouring houses into its structure.
+
+The house is built around a sahn in the centre of which there is a small garden with plants and palm trees. From here several of the fine mashrabiya windows in the house can be seen. Today the house is a museum which foreign visitors can tour for 35 Egyptian pounds (15 for students). Much of the marble floor work, wooden furniture, and ceiling decor is still intact</string>
 </resources>
