@@ -33,9 +33,10 @@
                 android:layout_height="178dp"
                 android:layout_marginBottom="8dp"
                 android:background="?android:attr/selectableItemBackground"
-                android:src="@drawable/things_to_do" />
+                android:src="@drawable/outdoors" />
 
             <ImageView
+                android:id="@+id/saved_places"
                 android:layout_width="match_parent"
                 android:layout_height="239dp"
                 android:background="?android:attr/selectableItemBackground"
@@ -50,6 +51,7 @@
                 android:src="@drawable/food_drink" />
 
             <ImageView
+                android:id="@+id/things_to_know"
                 android:layout_width="match_parent"
                 android:layout_height="239dp"
                 android:background="?android:attr/selectableItemBackground"
@@ -81,9 +83,10 @@
                 android:layout_height="178dp"
                 android:layout_marginBottom="8dp"
                 android:background="?android:attr/selectableItemBackground"
-                android:src="@drawable/outdoors" />
+                android:src="@drawable/things_to_do" />
 
             <ImageView
+                android:id="@+id/gitting_around"
                 android:layout_width="match_parent"
                 android:layout_height="226dp"
                 android:background="?android:attr/selectableItemBackground"

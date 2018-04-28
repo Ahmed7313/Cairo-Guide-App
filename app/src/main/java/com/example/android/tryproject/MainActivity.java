@@ -1,8 +1,10 @@
 package com.example.android.tryproject;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
+import android.support.design.widget.Snackbar;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -78,6 +80,33 @@ public class MainActivity extends AppCompatActivity
                 startActivity(intent);
             }
         });
+
+
+        ImageView savedPlaces = findViewById(R.id.saved_places);
+        savedPlaces.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Snackbar.make(view, "Under work and will be finished soon", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+            }
+        });
+        ImageView thingsToKNow = findViewById(R.id.things_to_know);
+        thingsToKNow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Snackbar.make(view, "Under work and will be finished soon", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+            }
+        });
+
+        ImageView gittingAround = findViewById(R.id.gitting_around);
+        gittingAround.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Snackbar.make(view, "Under work and will be finished soon", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+            }
+        });
     }
 
     @Override
@@ -106,6 +135,15 @@ public class MainActivity extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+
+            Intent intent = new Intent(Intent.ACTION_SENDTO);
+            intent.setData(Uri.parse("mailto:")); // only email apps should handle this
+            intent.putExtra(Intent.EXTRA_SUBJECT, "Feedback for Cairo Guid App ");
+            intent.putExtra(Intent.EXTRA_EMAIL, new String[]{"recipient@example.com"});
+
+            if (intent.resolveActivity(getPackageManager()) != null) {
+                startActivity(intent);
+            }
             return true;
         }
 
