@@ -13,6 +13,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.example.android.tryproject.com.appContent.ActivityContainer;
+
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -37,7 +39,10 @@ public class MainActivity extends AppCompatActivity
         thingToDo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, ActivityContainer.class));
+                int page = 1;
+                Intent intent = new Intent(MainActivity.this, ActivityContainer.class);
+                intent.putExtra("zero", page);// zero is your argument
+                startActivity(intent);
             }
         });
 
@@ -45,7 +50,32 @@ public class MainActivity extends AppCompatActivity
         pharaonic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, ActivityContainer.class));
+                int page1 = 2;
+                Intent intent = new Intent(MainActivity.this, ActivityContainer.class);
+                intent.putExtra("One", page1);// one is your argument
+                startActivity(intent);
+            }
+        });
+
+        ImageView food = findViewById(R.id.food);
+        food.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                int page2 = 3;
+                Intent intent = new Intent(MainActivity.this, ActivityContainer.class);
+                intent.putExtra("tow", page2);// tow is your argument
+                startActivity(intent);
+            }
+        });
+
+        ImageView mosques = findViewById(R.id.pyramamyds);
+        mosques.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                int page3 = 4;
+                Intent intent = new Intent(MainActivity.this, ActivityContainer.class);
+                intent.putExtra("three", page3);// tow is your argument
+                startActivity(intent);
             }
         });
     }

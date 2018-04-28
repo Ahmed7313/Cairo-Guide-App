@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".com.appContent.ActivityContainer">
 
     <android.support.design.widget.TabLayout
         android:id="@+id/sliding_tabs"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#484848"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="bottom"
         app:tabIndicatorColor="#00E676"
-        app:tabMode="fixed"
-        app:tabSelectedTextColor="#FFFFFF"
+        android:background="#263238"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="#bdbdbd"
         app:tabTextColor="#FFFFFF" />
 
     <android.support.v4.view.ViewPager

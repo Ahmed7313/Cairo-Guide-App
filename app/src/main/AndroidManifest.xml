@@ -19,14 +19,29 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Things_to_do" />
+        <activity android:name=".com.appContent.Things_to_do" />
+
         <activity
             android:name=".place_detailes"
             android:label="@string/title_activity_place_detailes"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:parentActivityName="com.example.android.tryproject.com.appContent.ActivityContainer"
+            android:theme="@style/AppTheme.NoActionBar">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.tryproject.com.appContent.ActivityContainer" />
+        </activity>
+
         <activity
-            android:name=".ActivityContainer"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:name=".com.appContent.ActivityContainer"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+            >
+        </activity>
     </application>
 
 </manifest>
