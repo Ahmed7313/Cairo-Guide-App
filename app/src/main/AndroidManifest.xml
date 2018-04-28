@@ -23,6 +23,9 @@
         <activity
             android:name=".place_detailes"
             android:label="@string/title_activity_place_detailes"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ActivityContainer"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

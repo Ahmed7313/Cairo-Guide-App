@@ -11,7 +11,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.TextView;
+
+import com.ms.square.android.expandabletextview.ExpandableTextView;
 
 import java.util.List;
 
@@ -43,13 +44,14 @@ public class place_detailes extends AppCompatActivity {
         final String placeWebsite = bundle.getString("placeWbsite");
         String PlaceInformationDetaled = bundle.getString("PlaceInformationDetaled");
 
+        ExpandableTextView textView = findViewById(R.id.expand_text_view);
+        textView.setText(PlaceInformationDetaled);
+
         ImageView placeImageDetailes = findViewById(R.id.place_image_detailes);
         placeImageDetailes.setImageResource(placeImage);
 
         setTitle(placeName);
 
-        TextView placeInformationDetailes = findViewById(R.id.place_Information_detailes);
-        placeInformationDetailes.setText(PlaceInformationDetaled);
 
         //opens the location of the place in the google maps when hit the location icon
         ImageView directon = findViewById(R.id.direction);

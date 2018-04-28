@@ -37,7 +37,15 @@ public class MainActivity extends AppCompatActivity
         thingToDo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, Things_to_do.class));
+                startActivity(new Intent(MainActivity.this, ActivityContainer.class));
+            }
+        });
+
+        ImageView pharaonic = findViewById(R.id.phoronic);
+        pharaonic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, ActivityContainer.class));
             }
         });
     }
