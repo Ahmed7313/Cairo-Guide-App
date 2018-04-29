@@ -34,21 +34,18 @@ public class Food_Fragment extends Fragment {
         View rootView = inflater.inflate(R.layout.list_item, container, false);
         final ArrayList<Place> places = new ArrayList<>();
 
-        places.add(new Place(R.drawable.koshary_el_tahrear, getString(R.string.koshary_eltahrear), "opens at 10 ap till 1 pm",
-                "one of the most famous Egyptian food ever", "geo:29.979487, 31.134250\n" +
-                "\n", "tel:19719", "http://koshary-eltahrir.com/"
+        places.add(new Place(R.drawable.koshary_el_tahrear, getString(R.string.koshary_eltahrear), getString(R.string.opens_at_9),
+                getString(R.string.koshary_onformation), getString(R.string.koshary_location), getString(R.string.koshary_eltahreer__phone), getString(R.string.koshary_eltahreer_website)
                 , getString(R.string.kushary_detailed)));
 
-        places.add(new Place(R.drawable.kabab, "Kabab", "opens at 9 oclock",
-                "Kebabs (also kabobs or kababs) are various cooked meat dishes, with their origins in Middle Eastern cuisine", "geo:30.029080, 31.259514\n" +
-                "\n", "tel: 0100 734 2507",
-                "https://www.elmenus.com/ar/cairo/search-%D9%85%D8%B4%D9%88%D9%8A%D8%A7%D8%AA?delivery=1&isopen=0",
+        places.add(new Place(R.drawable.kabab, getString(R.string.kabab_name), getString(R.string.opens_at_9),
+                getString(R.string.kabab_info), getString(R.string.kabab_location), getString(R.string.kabab_pnone),
+                getString(R.string.kabab_websit),
                 getString(R.string.kabab_details)));
 
-        places.add(new Place(R.drawable.flafel, "Flafel", "opens at 8 ocklock",
-                "Falafel is a common food eaten in the Middle East.",
-                "geo: 30.052484, 31.262578\n" +
-                        "\n,?z=18", "tel: 011 54265654", "https://www.facebook.com/s7emy.house/",
+        places.add(new Place(R.drawable.flafel, getString(R.string.flafel_name), getString(R.string.opens_at_9),
+                getString(R.string.flafel_info),
+                getString(R.string.flafel_location), getString(R.string.flafel_phone), getString(R.string.flafel_websit),
                 getString(R.string.flafel)));
 
         placeAdapter adapter = new placeAdapter(getActivity(), places);

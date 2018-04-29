@@ -34,21 +34,18 @@ public class Pharaonic_Fragment extends Fragment {
         View rootView = inflater.inflate(R.layout.list_item, container, false);
         final ArrayList<Place> places = new ArrayList<>();
 
-        places.add(new Place(R.drawable.pyramids_of_giza, "Pyramids of Giza", "opens all the time",
-                "one of the 7 amazies of the world", "geo:29.979487, 31.134250\n" +
-                "\n", "tel:02 257445694596", "http://www.sca-egypt.org/eng/SITE_GIZA_MP.htm",
+        places.add(new Place(R.drawable.pyramids_of_giza, getString(R.string.pyramids_name), getString(R.string.opens_all_the_time),
+                getString(R.string.pyramids_info), getString(R.string.pyramids_location), getString(R.string.pyramids_phone), getString(R.string.pyramids_websit),
                 getString(R.string.pyramids_of_giza)));
 
-        places.add(new Place(R.drawable.colossus_of_ramses_ii, "Mit Rahina Museum Colossus of Ramses II", "opens at 8 oclock",
-                "The Statue of Ramesses II is a 3,200-year-old figure of Ramesses II", "geo:29.29.795554, 31.246710\n" +
-                "\n", "tel: 555555",
-                "https://www.lonelyplanet.com/egypt/saqqara-memphis-dahshur/attractions/mit-rahina/a/poi-sig/1427164/1330429",
+        places.add(new Place(R.drawable.colossus_of_ramses_ii, getString(R.string.mit_rahina_name), getString(R.string.opens_at_9),
+                getString(R.string.mit_rahina_info), getString(R.string.mit_rahina_location), getString(R.string.mit_rahina_phone),
+                getString(R.string.mit_rahina_websit),
                 getString(R.string.ramsis)));
 
-        places.add(new Place(R.drawable.dahshur, "Dahshur", "opens at 8 ocklock",
-                "An ancient pyramed made before the three famous pyrameds from around th 5 centireis which located in Dahshour village i Egypt",
-                "geo: 30.052484, 31.262578\n" +
-                        "\n,?z=18", "tel: 011 54265654", "https://www.facebook.com/s7emy.house/",
+        places.add(new Place(R.drawable.dahshur, getString(R.string.dahsour_name), getString(R.string.opens_at_9),
+                getString(R.string.dashour_info),
+                getString(R.string.dahsour_location), getString(R.string.dahsour_phone), getString(R.string.dahsour_website),
                 getString(R.string.dahshour)));
 
         placeAdapter adapter = new placeAdapter(getActivity(), places);

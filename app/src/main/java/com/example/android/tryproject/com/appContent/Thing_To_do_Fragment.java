@@ -35,14 +35,24 @@ public class Thing_To_do_Fragment extends Fragment {
 
         final ArrayList<Place> places = new ArrayList<>();
 
-        places.add(new Place(R.drawable.egyptian_museum, "Egyptian Museum Cairo", "opens at 9 okcloc", "Tracing 5.000 years of ancient epyptian history", "geo:30.047968, 31.233809\n" +
-                "\n,?z=18", "tel:02 25794596", "http://www.antiquities.gov.eg/DefaultEn/Museum/Pages/MuseumDetails.aspx?MusCode=28#", getString(R.string.egyptian_museame)));
-        places.add(new Place(R.drawable.mohamed_ali_mosqe, "Mohamed Ali Mosqe", "opens at 8 oclock", "Built in 18 centiries in the middle of Saladin casitle", "geo:30.029080, 31.259514\n" +
-                "\n", "tel: 555555", "https://www.marefa.org/%D9%85%D8%B3%D8%AC%D8%AF_%D9%85%D8%AD%D9%85%D8%AF_%D8%B9%D9%84%D9%8A", getString(R.string.mohamed_ali_detailed_info)));
-        places.add(new Place(R.drawable.elsuhimi_house, "El Suhimi house", "opens at 10 ocklock", "An ancient house from the 5 centireis which located in Al mo'es streat", "geo: 30.052484, 31.262578\n" +
-                "\n,?z=18", "tel: 011 54265654", "https://www.facebook.com/s7emy.house/", getString(R.string.el_suhimi_house)));
-        places.add(new Place(R.drawable.islamic_museum, getString(R.string.islamic_museum_title), "opens at 9 ocklock", getString(R.string.islamic_museum_information), "geo:30.045495, 31.252196\n" +
-                "\n", "tel:02 23901520", "https://www.miaegypt.org/", getString(R.string.islamic_museum_detaild_information)));
+        places.add(new Place(R.drawable.egyptian_museum, getString(R.string.egyptian_museame_name), getString(R.string.opens_at_9), getString(R.string.egyptian_museame_info), getString(R.string.egyptian_museame_location), getString(R.string.egyptian_museame_pjone),
+                getString(R.string.egyptian_museame_website), getString(R.string.egyptian_museame)));
+
+        places.add(new Place(R.drawable.mohamed_ali_mosqe, getString(R.string.mohamed_ali_name), getString(R.string.opens_at_9),
+                getString(R.string.mohamed_ali_info), getString(R.string.mohamed_ali_location), getString(R.string.mohamed_ali_phone),
+                getString(R.string.mohamed_ali_websit),
+                getString(R.string.mohamed_ali_detailed_info)));
+
+        places.add(new Place(R.drawable.elsuhimi_house, getString(R.string.el_suhimi_house_name),
+                getString(R.string.opens_at_9), getString(R.string.el_suhimi_house_info),
+                getString(R.string.el_suhimi_house_location), getString(R.string.el_suhimi_house_phone),
+                getString(R.string.el_suhimi_house_websit),
+                getString(R.string.el_suhimi_house)));
+
+        places.add(new Place(R.drawable.islamic_museum, getString(R.string.islamic_museum_title), getString(R.string.opens_at_9),
+                getString(R.string.islamic_museum_information), getString(R.string.islamic_museum_location), getString(R.string.islamic_museum_phone), "https://www.miaegypt.org/",
+                getString(R.string.islamic_museum_detaild_information)));
+
         placeAdapter adapter = new placeAdapter(getActivity(), places);
 
         ListView listView = rootView.findViewById(R.id.list_item);

@@ -34,22 +34,19 @@ public class MosquesFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.list_item, container, false);
         final ArrayList<Place> places = new ArrayList<>();
 
-        places.add(new Place(R.drawable.al_azhar, "Al-Azhar Mosque", "opens all the time",
-                "Al-Azhar Mosque is an Egyptian mosque in Islamic Cairo.", "geo:30.032562, 31.256203\n" +
-                "\n", "tel:45345354645", "http://koshary-eltahrir.com/"
+        places.add(new Place(R.drawable.al_azhar, getString(R.string.al_azhar_mosqe_name), getString(R.string.opens_all_the_time),
+                getString(R.string.al_azhar_info), getString(R.string.al_azhar_location), getString(R.string.al_azhar_phone), getString(R.string.al_azhar_website)
                 , getString(R.string.al_azhar)));
 
-        places.add(new Place(R.drawable.sultan_h_madrasah, "Sultan Hassan Madrasah", "opens at 9 o'clock",
-                "The Mosque-Madrassa of Sultan Hassan is a massive mosque and madrassa located in the Old city of Cairo",
-                "geo:30.029080, 31.259514\n" +
-                        "\n", "tel: 0100 734 2507",
-                "http://www.touregypt.net/featurestories/hassanmosque.htm",
+        places.add(new Place(R.drawable.sultan_h_madrasah, getString(R.string.sultan_hassan_name2), getString(R.string.opens_at_9),
+                getString(R.string.sultan_hassan_info),
+                getString(R.string.sultan_hassan_location), getString(R.string.sultanhassan_phone),
+                getString(R.string.sultan_hassan_websit),
                 getString(R.string.sultan_hassa_madrasah)));
 
-        places.add(new Place(R.drawable.el_hussain, "Al-Hussein Mosque", "opens all the time",
-                "The Al-Hussain Mosque is a mosque built in 1154 The mosque is located in Cairot.",
-                "geo: 30.048111, 31.262997\n" +
-                        "\n,?z=18", "tel: 011 54245465654", "https://www.memphistours.co.uk/Egypt/Egypt-Travel-Guide/Cairo-Attractions/wiki/Mosque-of-Saiyidna-Hussein",
+        places.add(new Place(R.drawable.el_hussain, getString(R.string.el_hussin_name), getString(R.string.opens_all_the_time),
+                getString(R.string.el_hussin_info),
+                getString(R.string.el_hussin_location), getString(R.string.el_hussin_phone), getString(R.string.el_hussin_websit),
                 getString(R.string.al_hussin)));
 
         placeAdapter adapter = new placeAdapter(getActivity(), places);
