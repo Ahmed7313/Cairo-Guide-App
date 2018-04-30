@@ -21,7 +21,7 @@ public class FragmentAdapter extends FragmentPagerAdapter {
         if (position == 0) {
             return new ThingsToDoFragment();
         } else if (position == 1) {
-            return new Pharaonic_Fragment();
+            return new PharaonicFragment();
         } else if (position == 2) {
             return new Food_Fragment();
 

@@ -58,10 +58,7 @@ public class place_detailes extends AppCompatActivity {
         directon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Map point based on address
-                // Or map point based on latitude/longitude
-                // Uri location = Uri.parse("geo:37.422219,-122.08364?z=14"); // z param is zoom level
-                // Build the intent
+                //mape view show the exact location of the place using intent
                 Uri location = Uri.parse(placeLocation);
                 Intent mapIntent = new Intent(Intent.ACTION_VIEW, location);
 
