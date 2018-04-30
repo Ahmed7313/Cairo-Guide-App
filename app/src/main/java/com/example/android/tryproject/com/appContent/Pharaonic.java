@@ -12,7 +12,7 @@ public class Pharaonic extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_container);
         getSupportFragmentManager().beginTransaction()
-                .replace(R.id.container, new Pharaonic_Fragment())
+                .replace(R.id.container, new PharaonicFragment())
                 .commit();
     }
 }
