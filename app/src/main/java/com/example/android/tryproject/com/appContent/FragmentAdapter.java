@@ -19,7 +19,7 @@ public class FragmentAdapter extends FragmentPagerAdapter {
     @Override
     public Fragment getItem(int position) {
         if (position == 0) {
-            return new Thing_To_do_Fragment();
+            return new ThingsToDoFragment();
         } else if (position == 1) {
             return new Pharaonic_Fragment();
         } else if (position == 2) {

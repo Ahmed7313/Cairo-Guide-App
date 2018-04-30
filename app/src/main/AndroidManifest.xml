@@ -19,7 +19,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".com.appContent.Things_to_do" />
+        <activity android:name=".com.appContent.ThingsToDo" />
 
         <activity
             android:name=".place_detailes"

@@ -11,8 +11,8 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.example.android.tryproject.Place;
+import com.example.android.tryproject.PlaceAdapter;
 import com.example.android.tryproject.R;
-import com.example.android.tryproject.placeAdapter;
 import com.example.android.tryproject.place_detailes;
 
 import java.util.ArrayList;
@@ -49,7 +49,7 @@ public class MosquesFragment extends Fragment {
                 getString(R.string.el_hussin_location), getString(R.string.el_hussin_phone), getString(R.string.el_hussin_websit),
                 getString(R.string.al_hussin)));
 
-        placeAdapter adapter = new placeAdapter(getActivity(), places);
+        PlaceAdapter adapter = new PlaceAdapter(getActivity(), places);
 
         ListView listView = rootView.findViewById(R.id.list_item);
         listView.setAdapter(adapter);

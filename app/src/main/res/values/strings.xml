@@ -235,6 +235,7 @@ Over time Ramses Square turned out to be an unsuitable location, as the statue w
     <string name="Paranoiacs">Paranoiacs</string>
     <string name="Food">Food</string>
     <string name="Mosques">Mosques</string>
+    <string name="intent_mail_type">\"mailto:\"</string>
     <item name="opens_at_9" type="id">opens at 9 ap</item>
 
 </resources>

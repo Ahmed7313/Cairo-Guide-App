@@ -11,8 +11,8 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.example.android.tryproject.Place;
+import com.example.android.tryproject.PlaceAdapter;
 import com.example.android.tryproject.R;
-import com.example.android.tryproject.placeAdapter;
 import com.example.android.tryproject.place_detailes;
 
 import java.util.ArrayList;
@@ -48,7 +48,7 @@ public class Pharaonic_Fragment extends Fragment {
                 getString(R.string.dahsour_location), getString(R.string.dahsour_phone), getString(R.string.dahsour_website),
                 getString(R.string.dahshour)));
 
-        placeAdapter adapter = new placeAdapter(getActivity(), places);
+        PlaceAdapter adapter = new PlaceAdapter(getActivity(), places);
 
         ListView listView = rootView.findViewById(R.id.list_item);
         listView.setAdapter(adapter);

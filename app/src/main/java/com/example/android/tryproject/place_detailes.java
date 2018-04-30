@@ -30,8 +30,8 @@ public class place_detailes extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Snackbar.make(view, getString(R.string.uner_work), Snackbar.LENGTH_LONG)
+                        .setAction(getString(R.string.action), null).show();
             }
         });
 

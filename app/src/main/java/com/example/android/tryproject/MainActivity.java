@@ -137,7 +137,7 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.action_settings) {
 
             Intent intent = new Intent(Intent.ACTION_SENDTO);
-            intent.setData(Uri.parse("mailto:")); // only email apps should handle this
+            intent.setData(Uri.parse(getString(R.string.intent_mail_type))); // only email apps should handle this
             intent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.extra_subject));
             intent.putExtra(Intent.EXTRA_EMAIL, new String[]{getString(R.string.get_mail_intent)});
 
