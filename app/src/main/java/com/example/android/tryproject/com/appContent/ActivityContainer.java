@@ -17,7 +17,7 @@ public class ActivityContainer extends AppCompatActivity {
         // Find the view pager that will allow the user to swipe between fragments
         ViewPager viewPager = findViewById(R.id.viewpager);
         // Create an adapter that knows which fragment should be shown on each page
-        FragmentAdapter adapter = new FragmentAdapter(getSupportFragmentManager());
+        FragmentAdapter adapter = new FragmentAdapter(this, getSupportFragmentManager());
         // Set the adapter onto the view pager
         viewPager.setAdapter(adapter);
         // Give the TabLayout the ViewPager
@@ -28,10 +28,10 @@ public class ActivityContainer extends AppCompatActivity {
 
 
         int defaultValue = 0;
-        int page = getIntent().getIntExtra("zero", defaultValue);
-        int page1 = getIntent().getIntExtra("One", defaultValue);
-        int page2 = getIntent().getIntExtra("tow", defaultValue);
-        int page3 = getIntent().getIntExtra("three", defaultValue);
+        int page = getIntent().getIntExtra(getString(R.string.zero), defaultValue);
+        int page1 = getIntent().getIntExtra(getString(R.string.one), defaultValue);
+        int page2 = getIntent().getIntExtra(getString(R.string.tow), defaultValue);
+        int page3 = getIntent().getIntExtra(getString(R.string.three), defaultValue);
 
 
         viewPager.setCurrentItem(page);

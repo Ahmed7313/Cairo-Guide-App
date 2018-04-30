@@ -36,13 +36,13 @@ public class place_detailes extends AppCompatActivity {
         });
 
         Bundle bundle = getIntent().getExtras();
-        int placeImage = bundle.getInt("placeImage");
-        String placeName = bundle.getString("placeName");
-        String placeInformation = bundle.getString("placeInformation");
-        final String placePhone = bundle.getString("placePhone");
-        final String placeLocation = bundle.getString("placeLocation");
-        final String placeWebsite = bundle.getString("placeWbsite");
-        String PlaceInformationDetaled = bundle.getString("PlaceInformationDetaled");
+        int placeImage = bundle.getInt(getString(R.string.placeImage));
+        String placeName = bundle.getString(getString(R.string.placeName));
+        String placeInformation = bundle.getString(getString(R.string.placeInformation));
+        final String placePhone = bundle.getString(getString(R.string.placePhone));
+        final String placeLocation = bundle.getString(getString(R.string.placeLocation));
+        final String placeWebsite = bundle.getString(getString(R.string.placeWbsite));
+        String PlaceInformationDetaled = bundle.getString(getString(R.string.PlaceInformationDetaled));
 
         ExpandableTextView textView = findViewById(R.id.expand_text_view);
         textView.setText(PlaceInformationDetaled);

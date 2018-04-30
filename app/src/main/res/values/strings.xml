@@ -216,5 +216,25 @@ Over time Ramses Square turned out to be an unsuitable location, as the statue w
     <string name="islamic_museum_location">geo:30.045495, 31.252196</string>
     <string name="islamic_museum_phone">tel:02 23901520</string>
     <string name="sultan_hassan_name2">Sultan Hassan Madrasah</string>
+    <string name="extra_subject">Feedback for Cairo Guid App</string>
+    <string name="get_mail_intent">ahmedrabie7313@gmail.com</string>
+    <string name="uner_work">Under work and will be finished soon</string>
+    <string name="zero">zero</string>
+    <string name="one">one</string>
+    <string name="tow">tow</string>
+    <string name="three">three</string>
+    <string name="action">Action</string>
+    <string name="placeImage">placeImage</string>
+    <string name="placeName">placeName</string>
+    <string name="placeInformation">placeInformation</string>
+    <string name="placeLocation">placeLocation</string>
+    <string name="placePhone">placePhone</string>
+    <string name="placeWbsite">placeWbsite</string>
+    <string name="PlaceInformationDetaled">PlaceInformationDetaled</string>
+    <string name="things_to_do">Things To Do</string>
+    <string name="Paranoiacs">Paranoiacs</string>
+    <string name="Food">Food</string>
+    <string name="Mosques">Mosques</string>
     <item name="opens_at_9" type="id">opens at 9 ap</item>
+
 </resources>

@@ -63,13 +63,13 @@ public class Food_Fragment extends Fragment {
                 Intent intent = new Intent(Food_Fragment.this.getActivity(), place_detailes.class);
                 //create a bundle that will transfee the data to the place_detailes activity
                 Bundle bundle = new Bundle();
-                bundle.putInt("placeImage", place.getPlaceImage());
-                bundle.putString("placeName", place.getPlaceName());
-                bundle.putString("placeInformation", place.getPlaceInformation());
-                bundle.putString("placeLocation", place.getLocation());
-                bundle.putString("placePhone", place.getPlacePhone());
-                bundle.putString("placeWbsite", place.getPlaceWebsite());
-                bundle.putString("PlaceInformationDetaled", place.getPlaceInformationDetailed());
+                bundle.putInt(getString(R.string.placeImage), place.getPlaceImage());
+                bundle.putString(getString(R.string.placeName), place.getPlaceName());
+                bundle.putString(getString(R.string.placeInformation), place.getPlaceInformation());
+                bundle.putString(getString(R.string.placeLocation), place.getLocation());
+                bundle.putString(getString(R.string.placePhone), place.getPlacePhone());
+                bundle.putString(getString(R.string.placeWbsite), place.getPlaceWebsite());
+                bundle.putString(getString(R.string.PlaceInformationDetaled), place.getPlaceInformationDetailed());
                 intent.putExtras(bundle);
                 startActivity(intent);
             }

@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View view) {
                 int page = 1;
                 Intent intent = new Intent(MainActivity.this, ActivityContainer.class);
-                intent.putExtra("zero", page);// zero is your argument
+                intent.putExtra(getString(R.string.zero), page);// zero is your argument
                 startActivity(intent);
             }
         });
@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View view) {
                 int page1 = 2;
                 Intent intent = new Intent(MainActivity.this, ActivityContainer.class);
-                intent.putExtra("One", page1);// one is your argument
+                intent.putExtra(getString(R.string.one), page1);// one is your argument
                 startActivity(intent);
             }
         });
@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View view) {
                 int page2 = 3;
                 Intent intent = new Intent(MainActivity.this, ActivityContainer.class);
-                intent.putExtra("tow", page2);// tow is your argument
+                intent.putExtra(getString(R.string.tow), page2);// tow is your argument
                 startActivity(intent);
             }
         });
@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View view) {
                 int page3 = 4;
                 Intent intent = new Intent(MainActivity.this, ActivityContainer.class);
-                intent.putExtra("three", page3);// tow is your argument
+                intent.putExtra(getString(R.string.three), page3);// tow is your argument
                 startActivity(intent);
             }
         });
@@ -86,16 +86,16 @@ public class MainActivity extends AppCompatActivity
         savedPlaces.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Under work and will be finished soon", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Snackbar.make(view, getString(R.string.uner_work), Snackbar.LENGTH_LONG)
+                        .setAction(getString(R.string.action), null).show();
             }
         });
         ImageView thingsToKNow = findViewById(R.id.things_to_know);
         thingsToKNow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Under work and will be finished soon", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Snackbar.make(view, getString(R.string.uner_work), Snackbar.LENGTH_LONG)
+                        .setAction(getString(R.string.action), null).show();
             }
         });
 
@@ -103,8 +103,8 @@ public class MainActivity extends AppCompatActivity
         gittingAround.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Under work and will be finished soon", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Snackbar.make(view, getString(R.string.uner_work), Snackbar.LENGTH_LONG)
+                        .setAction(getString(R.string.action), null).show();
             }
         });
     }
@@ -138,8 +138,8 @@ public class MainActivity extends AppCompatActivity
 
             Intent intent = new Intent(Intent.ACTION_SENDTO);
             intent.setData(Uri.parse("mailto:")); // only email apps should handle this
-            intent.putExtra(Intent.EXTRA_SUBJECT, "Feedback for Cairo Guid App ");
-            intent.putExtra(Intent.EXTRA_EMAIL, new String[]{"recipient@example.com"});
+            intent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.extra_subject));
+            intent.putExtra(Intent.EXTRA_EMAIL, new String[]{getString(R.string.get_mail_intent)});
 
             if (intent.resolveActivity(getPackageManager()) != null) {
                 startActivity(intent);
