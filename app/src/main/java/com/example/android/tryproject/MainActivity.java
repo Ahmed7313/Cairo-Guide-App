@@ -126,7 +126,7 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
-    @Override
+   @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
@@ -136,13 +136,12 @@ public class MainActivity extends AppCompatActivity
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
 
-            Intent intent = new Intent(Intent.ACTION_SENDTO);
-            intent.setData(Uri.parse(getString(R.string.intent_mail_type))); // only email apps should handle this
-            intent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.extra_subject));
-            intent.putExtra(Intent.EXTRA_EMAIL, new String[]{getString(R.string.get_mail_intent)});
-
-            if (intent.resolveActivity(getPackageManager()) != null) {
-                startActivity(intent);
+            Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
+                    "mailto", "ahmedrabie7313@gmail.com", null));
+            emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Give me feedBack for the app");
+            emailIntent.putExtra(Intent.EXTRA_TEXT, "Send for me your feedback here");
+            if (emailIntent.resolveActivity(getPackageManager()) != null) {
+                startActivity(Intent.createChooser(emailIntent, "Send email..."));
             }
             return true;
         }
