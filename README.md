@@ -20,12 +20,22 @@
  
 # I have used through this project:
 **Coordinator Layout**
+
 **Custom ActionBarLayout**
+
 **ScrollableView for the ActionBar**
+
 **Explicit and Implicit Intent**
+
 **Custome Classes**
+
 **ViewPager with toolbar**
+
 **Navigation Drawer**
+
 **CustomeAdapter to recycle the views**
+
 **ListView**
+
 **Collapsed Text**
+
