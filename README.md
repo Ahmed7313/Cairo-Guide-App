@@ -1,9 +1,31 @@
-# cairoguidFinal
+# Cairo Guide
 
-This App is designed for taking the user in a tour Guide in monuments in Egypt and giving hime a refrence for its location, phone, and site.
-This project was created using 	 
-1- ArrayAdapter
-2-Impicit and explicit intents
-3-Fragments
-4-OOP design features 
-5-Android frame work
+ This is the Thired App I have created for Google Basics NanoDegree.
+ 
+ Its main goal was to learn how to create a multiscreen App
+
+- **This is how the App looks like**
+
+<a href="https://imgflip.com/gif/2g2h0j"><img src="https://i.imgflip.com/2g2h0j.gif" title="made at imgflip.com"/></a>
+# The goal of this project was to learn:
+ -   Planning the app design and navigation before coding
+
+-   Selecting proper data structures to store lists of information
+
+-   Building layouts to display those lists of data
+
+-   Navigating between lists in Fragments using either a ViewPager plus TabLayout or Navigation Drawer
+-   Creating my own custom classes
+-   Properly handling images
+ 
+# I have used through this project:
+**Coordinator Layout**
+**Custom ActionBarLayout**
+**ScrollableView for the ActionBar**
+**Explicit and Implicit Intent**
+**Custome Classes**
+**ViewPager with toolbar**
+**Navigation Drawer**
+**CustomeAdapter to recycle the views**
+**ListView**
+**Collapsed Text**
