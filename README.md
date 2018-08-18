@@ -6,7 +6,7 @@
 
 - **This is how the App looks like**
 
-<a href="https://thumbs.gfycat.com/HomelyRareHarlequinbug-size_restricted.gif"><img src="https://i.imgflip.com/2g2h0j.gif" title="made at imgflip.com"/></a>
+<a href="https://imgflip.com/gif/2g2h0j"><img src="https://thumbs.gfycat.com/HomelyRareHarlequinbug-size_restricted.gif" title="made at imgflip.com"/></a>
 
 # The goal of this project was to learn:
  -   Planning the app design and navigation before coding
