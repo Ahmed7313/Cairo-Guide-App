@@ -6,7 +6,7 @@
 
 - **This is how the App looks like**
 
-<a href="https://gfycat.com/gifs/detail/WealthyGiddyAmericanwirehair"><img src="https://thumbs.gfycat.com/HomelyRareHarlequinbug-size_restricted.gif" title="made at imgflip.com"/></a>
+<div style='position:relative; padding-bottom:calc(177.78% + 44px)'><iframe src='https://gfycat.com/ifr/FloweryNauticalAbyssiniangroundhornbill' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div>
 
 # The goal of this project was to learn:
  -   Planning the app design and navigation before coding
